@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable btn_login
+drawable email
+drawable facebook
+drawable google
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable intro
+drawable logo
+drawable name
+drawable password
+drawable top_background
+id btPredict
+id imageView
+id imageView2
+id main
+id textView
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.FarmersFriend
+style Theme.FarmersFriend
+xml backup_rules
+xml data_extraction_rules
