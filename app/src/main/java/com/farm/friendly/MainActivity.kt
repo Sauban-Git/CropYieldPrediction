@@ -4,7 +4,6 @@ package com.farm.friendly
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
@@ -36,8 +35,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
-
-        result = dialogBinding.result
 
         countries = listOf(
             "Albania",
@@ -162,15 +159,18 @@ class MainActivity : AppCompatActivity() {
 
 
     // for showing custom dialog
-    @SuppressLint("InflateParams", "MissingInflatedId")
+    @SuppressLint("InflateParams")
     private fun showDialog() {
-        val dialogView = layoutInflater.inflate(R.layout.dialog_custom, null, false)
+        // Use DialogCustomBinding for the dialog
+        val dialogBinding = DialogCustomBinding.inflate(layoutInflater)
 
-        val spinCntry: Spinner = dialogView.findViewById(R.id.spinCntry)
-        val spinCrop: Spinner = dialogView.findViewById(R.id.spinCrop)
-        val txtRain: EditText = dialogView.findViewById(R.id.txtRain)
-        val txtPest: EditText = dialogView.findViewById(R.id.txtPest)
-        val txtTemp: EditText = dialogView.findViewById(R.id.txtTemp)
+        // Set up spinners using the dialog binding
+        val spinCntry: Spinner = dialogBinding.spinCntry
+        val spinCrop: Spinner = dialogBinding.spinCrop
+        val txtRain: EditText = dialogBinding.txtRain
+        val txtPest: EditText = dialogBinding.txtPest
+        val txtTemp: EditText = dialogBinding.txtTemp
+        val result = dialogBinding.result // Get the result TextView from the dialog binding
 
         val cntryAdaptor = ArrayAdapter(this, android.R.layout.simple_spinner_item, countries)
         cntryAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -180,37 +180,38 @@ class MainActivity : AppCompatActivity() {
         cropAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinCrop.adapter = cropAdaptor
 
-
         val dialogBuilder = AlertDialog.Builder(this)
             .setTitle("Select Options")
-            .setView(dialogView)
+            .setView(dialogBinding.root)
 
         val dialog = dialogBuilder.create()
 
-        dialogView.findViewById<Button>(R.id.btnCancel).setOnClickListener {
+        dialogBinding.btnCancel.setOnClickListener {
             dialog.dismiss()
         }
-        dialogView.findViewById<Button>(R.id.btnSubmit).setOnClickListener {
+
+        dialogBinding.btnSubmit.setOnClickListener {
             val selectedCntry = spinCntry.selectedItem.toString()
             val selectedCrop = spinCrop.selectedItem.toString()
             val rain = txtRain.text.toString()
             val pest = txtPest.text.toString()
             val temp = txtTemp.text.toString()
 
-            makePrediction(selectedCntry,selectedCrop,rain,pest,temp)
+            // Validate input
+            if (rain.isEmpty() || pest.isEmpty() || temp.isEmpty()) {
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener // Return to prevent further execution
+            }
+
+            makePrediction(selectedCntry, selectedCrop, rain, pest, temp, result) // Pass result to update
 
             Toast.makeText(this, "Submitted", Toast.LENGTH_SHORT).show()
+            dialog.dismiss() // Dismiss the dialog after submission
         }
         dialog.show()
     }
 
-    private fun makePrediction(selectedCntry: String, selectedCrop: String, rain: String, pest: String, temp: String) {
-        // Input validation
-        if (rain.isEmpty() || pest.isEmpty() || temp.isEmpty()) {
-            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
-            return
-        }
-
+    private fun makePrediction(selectedCntry: String, selectedCrop: String, rain: String, pest: String, temp: String, result: TextView) {
         val json = JSONObject().apply {
             put("average_rain_fall_mm_per_year", rain)
             put("pesticides_tonnes", pest)
