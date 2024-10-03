@@ -20,6 +20,7 @@ id btnSubmit
 id imageView
 id imageView2
 id main
+id result
 id spinCntry
 id spinCrop
 id txtPest

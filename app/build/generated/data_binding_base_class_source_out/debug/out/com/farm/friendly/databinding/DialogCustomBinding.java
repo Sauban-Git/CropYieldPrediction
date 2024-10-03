@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -28,6 +29,9 @@ public final class DialogCustomBinding implements ViewBinding {
   public final Button btnSubmit;
 
   @NonNull
+  public final TextView result;
+
+  @NonNull
   public final Spinner spinCntry;
 
   @NonNull
@@ -43,11 +47,13 @@ public final class DialogCustomBinding implements ViewBinding {
   public final EditText txtTemp;
 
   private DialogCustomBinding(@NonNull LinearLayout rootView, @NonNull Button btnCancel,
-      @NonNull Button btnSubmit, @NonNull Spinner spinCntry, @NonNull Spinner spinCrop,
-      @NonNull EditText txtPest, @NonNull EditText txtRain, @NonNull EditText txtTemp) {
+      @NonNull Button btnSubmit, @NonNull TextView result, @NonNull Spinner spinCntry,
+      @NonNull Spinner spinCrop, @NonNull EditText txtPest, @NonNull EditText txtRain,
+      @NonNull EditText txtTemp) {
     this.rootView = rootView;
     this.btnCancel = btnCancel;
     this.btnSubmit = btnSubmit;
+    this.result = result;
     this.spinCntry = spinCntry;
     this.spinCrop = spinCrop;
     this.txtPest = txtPest;
@@ -94,6 +100,12 @@ public final class DialogCustomBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.result;
+      TextView result = ViewBindings.findChildViewById(rootView, id);
+      if (result == null) {
+        break missingId;
+      }
+
       id = R.id.spinCntry;
       Spinner spinCntry = ViewBindings.findChildViewById(rootView, id);
       if (spinCntry == null) {
@@ -124,8 +136,8 @@ public final class DialogCustomBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DialogCustomBinding((LinearLayout) rootView, btnCancel, btnSubmit, spinCntry,
-          spinCrop, txtPest, txtRain, txtTemp);
+      return new DialogCustomBinding((LinearLayout) rootView, btnCancel, btnSubmit, result,
+          spinCntry, spinCrop, txtPest, txtRain, txtTemp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

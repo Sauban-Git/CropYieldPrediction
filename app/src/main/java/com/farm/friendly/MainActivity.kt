@@ -1,24 +1,33 @@
 package com.farm.friendly
 
-import ai.onnxruntime.OrtEnvironment
-import ai.onnxruntime.OrtSession
+
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.farm.friendly.databinding.ActivityMainBinding
+import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okio.IOException
+import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var countries: List<String>
     private lateinit var crops: List<String>
+
+    private lateinit var result: TextView
+
+    private val client = OkHttpClient()
+    private val BASE_URL = "http://192.168.139.251:5000/predict"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -142,71 +151,9 @@ class MainActivity : AppCompatActivity() {
             "Yams"
         )
 
-        val featureMin = doubleArrayOf(
-            51.0, 0.04, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-        )
-
-        val featureMax = doubleArrayOf(
-            3240.0, 367778.0, 30.65, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-            1.0, 1.0, 1.0, 1.0, 1.0, 1.0
-        )
-
-        val rawInput = doubleArrayOf(
-            100.0, 200000.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-            0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-        )
-
         binding.btnStart.setOnClickListener {
             showDialog()
         }
-
-        val scaledInput = DoubleArray(rawInput.size)
-        for (i in rawInput.indices) {
-            scaledInput[i] = scaler.scale(rawInput[i], featureMin[i], featureMax[i])
-        }
-
-        // Run inference with ONNX model
-        runInference(scaledInput)
-    }
-
-    private fun runInference(scaledInput: DoubleArray) {
-        // Initialize ONNX Runtime environment
-        val env = OrtEnvironment.getEnvironment()
-        val session = env.createSession("model.onnx", OrtSession.SessionOptions())
-
-        // Convert scaled input to ONNX Tensor
-        val inputTensor = OrtTensor.createTensor(
-            env, scaledInput, longArrayOf(
-                1,
-                scaledInput.size.toLong()
-            )
-        )
-
-        // Run the model
-        val result = session.run(mapOf("input" to inputTensor))
-
-        // Process the result as needed
-        val outputTensor = result[0].value as OrtTensor
-        val outputArray = outputTensor.getValue() as FloatArray
-
-        // Print or handle the output
-        println("Model output: ${outputArray.joinToString(", ")}")
     }
 
 
@@ -241,18 +188,50 @@ class MainActivity : AppCompatActivity() {
         }
         dialogView.findViewById<Button>(R.id.btnSubmit).setOnClickListener {
             val selectedCntry = spinCntry.selectedItem.toString()
-            val selectedCrops = spinCntry.selectedItem.toString()
+            val selectedCrop = spinCrop.selectedItem.toString()
             val rain = txtRain.text.toString()
             val pest = txtPest.text.toString()
             val temp = txtTemp.text.toString()
 
-            println(selectedCntry)
-            println(selectedCrops)
-            println(rain)
-            println(pest)
-            println(temp)
-            dialog.dismiss()
+            makePrediction(selectedCntry,selectedCrop,rain,pest,temp)
+
+            Toast.makeText(this, "Submitted", Toast.LENGTH_SHORT).show()
         }
         dialog.show()
+    }
+
+    private fun makePrediction(selectedCntry: String, selectedCrop: String,rain: String, pest: String, temp: String) {
+        try {
+            val json = JSONObject().apply {
+                put("average_rain_fall_mm_per_year", rain)
+                put("pesticides_tonnes", pest)
+                put("avg_temp", temp)
+                put("Area", selectedCntry)
+                put("Item", selectedCrop)
+            }
+
+            val body = RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), json.toString())
+            val request = Request.Builder()
+                .url(BASE_URL)
+                .post(body)
+                .build()
+
+            client.newCall(request).enqueue(object : Callback {
+                override fun onFailure(call: Call, e: IOException) {
+                    e.printStackTrace()
+                }
+
+                override fun onResponse(call: Call, response: Response) {
+                    if (response.isSuccessful) {
+                        val myResponse = response.body?.string()
+                        runOnUiThread {
+                            result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}"
+                        }
+                    }
+                }
+            })
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 }

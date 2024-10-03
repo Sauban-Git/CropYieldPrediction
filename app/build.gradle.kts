@@ -75,7 +75,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    implementation("com.microsoft.onnxruntime:onnxruntime:1.12.1")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
