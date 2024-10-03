@@ -15,6 +15,7 @@ import com.farm.friendly.databinding.ActivityMainBinding
 import com.farm.friendly.databinding.DialogCustomBinding
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.RequestBody.Companion.toRequestBody
 import okio.IOException
 import org.json.JSONObject
 
@@ -23,12 +24,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var countries: List<String>
     private lateinit var crops: List<String>
-    private lateinit var dialogBinding: DialogCustomBinding
-
-    private lateinit var result: TextView
 
     private val client = OkHttpClient()
-    private val BASE_URL = "http://192.168.139.251:5000/predict"
+    private val urlServer = "http://192.168.139.251:5000/predict"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -206,7 +204,6 @@ class MainActivity : AppCompatActivity() {
             makePrediction(selectedCntry, selectedCrop, rain, pest, temp, result) // Pass result to update
 
             Toast.makeText(this, "Submitted", Toast.LENGTH_SHORT).show()
-            dialog.dismiss() // Dismiss the dialog after submission
         }
         dialog.show()
     }
@@ -220,9 +217,10 @@ class MainActivity : AppCompatActivity() {
             put("Item", selectedCrop)
         }
 
-        val body = RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), json.toString())
+        val body =
+            json.toString().toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
         val request = Request.Builder()
-            .url(BASE_URL)
+            .url(urlServer)
             .post(body)
             .build()
 
@@ -230,7 +228,7 @@ class MainActivity : AppCompatActivity() {
             override fun onFailure(call: Call, e: IOException) {
                 e.printStackTrace()
                 runOnUiThread {
-                    Toast.makeText(this@MainActivity, "Network error, please try again", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, " Network error: ${e.message}", Toast.LENGTH_LONG).show()
                 }
             }
 
@@ -240,6 +238,7 @@ class MainActivity : AppCompatActivity() {
                     val myResponse = response.body?.string()
                     runOnUiThread {
                         result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}"
+                        Toast.makeText(this@MainActivity, "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}", Toast.LENGTH_LONG).show()
                     }
                 } else {
                     runOnUiThread {
