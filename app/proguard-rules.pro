@@ -25,3 +25,6 @@
 -keep class android.support.annotation.Keep { void <init>(); }
 -keep class okhttp3.** { *; }
 -keep class okio.** { *; }
+-keep class org.bouncycastle.** { *; }
+-keep class org.conscrypt.** { *; }
+-keep class org.openjsse.** { *; }
