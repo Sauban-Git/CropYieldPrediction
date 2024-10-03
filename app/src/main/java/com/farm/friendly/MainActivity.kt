@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var crops: List<String>
 
     private val client = OkHttpClient()
-    private val urlServer = "https://10.250.12.186:5000/predict"
+    private val urlServer = "http://10.250.12.186:5000/predict"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
