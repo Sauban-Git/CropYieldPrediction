@@ -34,8 +34,13 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:baselineAligned="false"
-        android:hint="Enter Dont know"
+        android:hint="Enter average temp of the year"
         android:inputType="number" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
 
     <Button
         android:id="@+id/btnCancel"

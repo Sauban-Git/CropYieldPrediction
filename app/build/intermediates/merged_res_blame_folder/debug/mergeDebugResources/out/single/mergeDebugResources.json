@@ -4,291 +4,295 @@
         "source": "com.farm.friendly.app-main-33:/layout/dialog_custom.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_name.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/name.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_name.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/name.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_logo.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\logo.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_intro.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/intro.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_btn_login.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\btn_login.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_google.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/google.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_btn_login.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\btn_login.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_name.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\name.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_email.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\email.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_email.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/email.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_intro.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\intro.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_logo.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\logo.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_logo.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/logo.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_email.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/email.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_facebook.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\facebook.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_top_background.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/top_background.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_logo.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\logo.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_intro.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/intro.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_intro.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\intro.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_password.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/password.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_top_background.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\top_background.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_intro.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\intro.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_top_background.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/top_background.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_logo.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\logo.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/xml_data_extraction_rules.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_btn_login.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\btn_login.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_email.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/email.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_top_background.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\top_background.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_google.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/google.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_google.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/google.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_intro.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\intro.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_facebook.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/facebook.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_facebook.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\facebook.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_btn_login.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/btn_login.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_password.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\password.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_name.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/name.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_intro.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\intro.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_facebook.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/facebook.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_top_background.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\top_background.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_password.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/password.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_facebook.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\facebook.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_facebook.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\facebook.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_intro.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/intro.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_name.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\name.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_name.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/name.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_facebook.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/facebook.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_top_background.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\top_background.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_btn_login.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/btn_login.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_password.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\password.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_name.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/name.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_email.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/email.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_email.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\email.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_google.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/google.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_email.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\email.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable_greencrop.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable/greencrop.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_top_background.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/top_background.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_top_background.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/top_background.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_email.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\email.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_btn_login.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/btn_login.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_logo.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\logo.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_google.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\google.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_password.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\password.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_password.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/password.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_google.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\google.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_password.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/password.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_name.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\name.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/xml_backup_rules.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_btn_login.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/btn_login.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_btn_login.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\btn_login.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_google.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/google.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_password.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\password.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_email.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/email.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_name.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\name.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_intro.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/intro.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_top_background.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\top_background.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_top_background.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/top_background.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_google.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\google.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\layout_dialog_custom.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\layout\\dialog_custom.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_email.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\email.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_password.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/password.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_btn_login.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\btn_login.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_password.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/password.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_password.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\password.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_facebook.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/facebook.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_top_background.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/top_background.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_password.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\password.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_logo.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/logo.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_logo.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\logo.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_intro.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/intro.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_email.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/email.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_facebook.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\facebook.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_google.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\google.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-mdpi_logo.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-mdpi/logo.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable_greencrop.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable\\greencrop.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-ldpi_btn_login.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-ldpi/btn_login.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_facebook.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\facebook.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_btn_login.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/btn_login.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xhdpi_email.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\email.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.farm.friendly.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_facebook.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/facebook.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-hdpi_btn_login.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-hdpi\\btn_login.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-hdpi_logo.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-hdpi/logo.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_top_background.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\top_background.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xhdpi_logo.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xhdpi/logo.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_intro.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/intro.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_google.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\google.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_facebook.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/facebook.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxhdpi_logo.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxhdpi/logo.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_intro.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\intro.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_name.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/name.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxxhdpi_google.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\google.png"
     },
     {
-        "merged": "com.farm.friendly.app-debug-31:/drawable-xxxhdpi_google.png.flat",
-        "source": "com.farm.friendly.app-main-33:/drawable-xxxhdpi/google.png"
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_name.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\name.png"
+    },
+    {
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_name.png.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\name.png"
     }
 ]
