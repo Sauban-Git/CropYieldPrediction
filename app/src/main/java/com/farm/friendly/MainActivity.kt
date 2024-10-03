@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var crops: List<String>
 
     private val client = OkHttpClient()
-    private val urlServer = "http://192.168.139.251:5000/predict"
+    private val urlServer = "https://10.250.12.186:5000/predict"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -237,8 +237,8 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val myResponse = response.body?.string()
                     runOnUiThread {
-                        result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}"
-                        Toast.makeText(this@MainActivity, "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}", Toast.LENGTH_LONG).show()
+                        result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}Tonnes per Hectare"
+                        Toast.makeText(this@MainActivity, "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}Tonnes per Hectare", Toast.LENGTH_LONG).show()
                     }
                 } else {
                     runOnUiThread {
