@@ -246,8 +246,8 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val myResponse = response.body?.string()
                     runOnUiThread {
-                        result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}Tonnes per Hectare"
-                        Toast.makeText(this@MainActivity, "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}Tonnes per Hectare", Toast.LENGTH_LONG).show()
+                        result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }} Tonnes per Hectare"
+                        Toast.makeText(this@MainActivity, "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }} Tonnes per Hectare", Toast.LENGTH_LONG).show()
                     }
                 } else {
                     runOnUiThread {
