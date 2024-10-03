@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable btn_login
+drawable email
+drawable facebook
+drawable google
+drawable greencrop
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable intro
+drawable logo
+drawable name
+drawable password
+drawable top_background
+id btnCancel
+id btnStart
+id btnSubmit
+id imageView
+id imageView2
+id main
+id spinCntry
+id spinCrop
+id txtPest
+id txtRain
+id txtTemp
+layout activity_main
+layout dialog_custom
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.FarmersFriend
+style Theme.FarmersFriend
+xml backup_rules
+xml data_extraction_rules
