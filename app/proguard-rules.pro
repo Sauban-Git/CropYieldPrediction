@@ -20,3 +20,6 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 -keep public class com.google.vending.licensing.ILicensingService { void <init>(); }
+-keep public class com.android.vending.licensing.ILicensingService { void <init>(); }
+-keep public class com.google.android.vending.licensing.ILicensingService { void <init>(); }
+-keep class android.support.annotation.Keep { void <init>(); }
