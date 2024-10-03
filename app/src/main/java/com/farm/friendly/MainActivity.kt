@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var countries: List<String>
     private lateinit var crops: List<String>
 
+    private lateinit var ipAdd: EditText
+
     private val client = OkHttpClient()
-    private val urlServer = "http://10.250.12.186:5000/predict"
+    private var urlServer = "https://web-production-e6c2.up.railway.app/predict"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -150,8 +152,15 @@ class MainActivity : AppCompatActivity() {
             "Yams"
         )
 
+        ipAdd = findViewById(R.id.ipAdd)
         binding.btnStart.setOnClickListener {
-            showDialog()
+            val ipAddress = ipAdd.text.toString().trim()
+            if (ipAddress.isNotEmpty()) {
+                urlServer = "http://$ipAddress:5000/predict"
+                showDialog()
+            }else {
+                showDialog()
+            }
         }
     }
 
