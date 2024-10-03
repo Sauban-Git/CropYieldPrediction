@@ -9,15 +9,15 @@
         android:id="@+id/txtPest"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Enter Avg Rainfall in mm"
-        android:inputType="number" />
+        android:hint="Enter Avg Rainfall in mm."
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/txtRain"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Enter Pesticide used in tonnes."
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
 
     <EditText
@@ -25,8 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:baselineAligned="false"
-        android:hint="Enter average temp of the year"
-        android:inputType="number" />
+        android:hint="Enter average temp of the year."
+        android:inputType="numberDecimal" />
 
     <Spinner
         android:id="@+id/spinCntry"
