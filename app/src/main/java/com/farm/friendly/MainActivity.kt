@@ -1,5 +1,7 @@
 package com.farm.friendly
 
+import ai.onnxruntime.OrtEnvironment
+import ai.onnxruntime.OrtSession
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -24,15 +26,191 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        countries = listOf("USA","India","Canada","Australia")
-        crops = listOf("Maze","Potatoes","Rice","Corn")
+        countries = listOf(
+            "Albania",
+            "Algeria",
+            "Angola",
+            "Argentina",
+            "Armenia",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Belarus",
+            "Belgium",
+            "Botswana",
+            "Brazil",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "Cameroon",
+            "Canada",
+            "Central African Republic",
+            "Chile",
+            "Colombia",
+            "Croatia",
+            "Denmark",
+            "Dominican Republic",
+            "Ecuador",
+            "Egypt",
+            "El Salvador",
+            "Eritrea",
+            "Estonia",
+            "Finland",
+            "France",
+            "Germany",
+            "Ghana",
+            "Greece",
+            "Guatemala",
+            "Guinea",
+            "Guyana",
+            "Haiti",
+            "Honduras",
+            "Hungary",
+            "India",
+            "Indonesia",
+            "Iraq",
+            "Ireland",
+            "Italy",
+            "Jamaica",
+            "Japan",
+            "Kazakhstan",
+            "Kenya",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Libya",
+            "Lithuania",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Mali",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Montenegro",
+            "Morocco",
+            "Mozambique",
+            "Namibia",
+            "Nepal",
+            "Netherlands",
+            "New Zealand",
+            "Nicaragua",
+            "Niger",
+            "Norway",
+            "Pakistan",
+            "Papua New Guinea",
+            "Peru",
+            "Poland",
+            "Portugal",
+            "Qatar",
+            "Romania",
+            "Rwanda",
+            "Saudi Arabia",
+            "Senegal",
+            "Slovenia",
+            "South Africa",
+            "Spain",
+            "Sri Lanka",
+            "Sudan",
+            "Suriname",
+            "Sweden",
+            "Switzerland",
+            "Tajikistan",
+            "Thailand",
+            "Tunisia",
+            "Turkey",
+            "Uganda",
+            "Ukraine",
+            "United Kingdom",
+            "Uruguay",
+            "Zambia",
+            "Zimbabwe"
+        )
+        crops = listOf(
+            "Cassava",
+            "Maize",
+            "Plantains and others",
+            "Potatoes",
+            "Rice, paddy",
+            "Sorghum",
+            "Soybeans",
+            "Sweet potatoes",
+            "Wheat",
+            "Yams"
+        )
+
+        val featureMin = doubleArrayOf(
+            51.0, 0.04, 1.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+        )
+
+        val featureMax = doubleArrayOf(
+            3240.0, 367778.0, 30.65, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0
+        )
+
+        val rawInput = doubleArrayOf(
+            100.0, 200000.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+            0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+        )
 
         binding.btnStart.setOnClickListener {
-            Toast.makeText(this, "Hello and Welcome!", Toast.LENGTH_SHORT).show()
             showDialog()
         }
+
+        val scaledInput = DoubleArray(rawInput.size)
+        for (i in rawInput.indices) {
+            scaledInput[i] = scaler.scale(rawInput[i], featureMin[i], featureMax[i])
+        }
+
+        // Run inference with ONNX model
+        runInference(scaledInput)
     }
 
+    private fun runInference(scaledInput: DoubleArray) {
+        // Initialize ONNX Runtime environment
+        val env = OrtEnvironment.getEnvironment()
+        val session = env.createSession("model.onnx", OrtSession.SessionOptions())
+
+        // Convert scaled input to ONNX Tensor
+        val inputTensor = OrtTensor.createTensor(
+            env, scaledInput, longArrayOf(
+                1,
+                scaledInput.size.toLong()
+            )
+        )
+
+        // Run the model
+        val result = session.run(mapOf("input" to inputTensor))
+
+        // Process the result as needed
+        val outputTensor = result[0].value as OrtTensor
+        val outputArray = outputTensor.getValue() as FloatArray
+
+        // Print or handle the output
+        println("Model output: ${outputArray.joinToString(", ")}")
+    }
+
+
+    // for showing custom dialog
     @SuppressLint("InflateParams", "MissingInflatedId")
     private fun showDialog() {
         val dialogView = layoutInflater.inflate(R.layout.dialog_custom, null, false)
@@ -44,7 +222,13 @@ class MainActivity : AppCompatActivity() {
         val txtTemp: EditText = dialogView.findViewById(R.id.txtTemp)
 
         val cntryAdaptor = ArrayAdapter(this, android.R.layout.simple_spinner_item, countries)
+        cntryAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinCntry.adapter = cntryAdaptor
+
         val cropAdaptor = ArrayAdapter(this, android.R.layout.simple_spinner_item, crops)
+        cropAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinCrop.adapter = cropAdaptor
+
 
         val dialogBuilder = AlertDialog.Builder(this)
             .setTitle("Select Options")
@@ -61,12 +245,12 @@ class MainActivity : AppCompatActivity() {
             val rain = txtRain.text.toString()
             val pest = txtPest.text.toString()
             val temp = txtTemp.text.toString()
-            
-            println("$selectedCntry")
-            println("$selectedCrops")
-            println("$rain")
-            println("$pest")
-            println("$temp")
+
+            println(selectedCntry)
+            println(selectedCrops)
+            println(rain)
+            println(pest)
+            println(temp)
             dialog.dismiss()
         }
         dialog.show()

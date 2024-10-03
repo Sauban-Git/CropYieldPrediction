@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.farm.friendly.app-mergeDebugResources-30:/layout/dialog_custom.xml",
+        "source": "com.farm.friendly.app-main-33:/layout/dialog_custom.xml"
+    },
+    {
+        "merged": "com.farm.friendly.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.farm.friendly.app-main-33:/layout/activity_main.xml"
+    }
+]
