@@ -1,15 +1,15 @@
 [
     {
-        "merged": "com.farm.friendly.app-debug-31:/layout_dialog_custom.xml.flat",
-        "source": "com.farm.friendly.app-main-33:/layout/dialog_custom.xml"
-    },
-    {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_logo.png.flat",
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "com.farm.friendly.app-debug-31:/xml_network_security_config.xml.flat",
+        "source": "com.farm.friendly.app-main-33:/xml/network_security_config.xml"
     },
     {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
@@ -24,6 +24,10 @@
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xxxhdpi\\btn_login.png"
     },
     {
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\xml\\network_security_config.xml"
+    },
+    {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_name.png.flat",
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\name.png"
     },
@@ -36,12 +40,12 @@
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-xhdpi\\intro.png"
     },
     {
-        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\xml\\backup_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-mdpi_logo.png.flat",
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\xml\\backup_rules.xml"
     },
     {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -52,12 +56,12 @@
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-mdpi\\facebook.png"
     },
     {
-        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-ldpi_logo.png.flat",
         "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable-ldpi\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-main-33:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\91896\\.gradle\\daemon\\8.9\\com.farm.friendly.app-debug-31:\\drawable-xxhdpi_intro.png.flat",
