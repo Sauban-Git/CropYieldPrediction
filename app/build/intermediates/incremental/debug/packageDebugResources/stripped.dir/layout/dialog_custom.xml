@@ -5,6 +5,29 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <EditText
+        android:id="@+id/txtPest"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Avg Rainfall in mm"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtRain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Pesticide used in tonnes."
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/txtTemp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:baselineAligned="false"
+        android:hint="Enter average temp of the year"
+        android:inputType="number" />
+
     <Spinner
         android:id="@+id/spinCntry"
         android:layout_width="match_parent"
@@ -15,32 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="48dp" />
 
-    <EditText
-        android:id="@+id/txtRain"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Enter Pesticide used in tonnes."
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/txtPest"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Enter Avg Rainfall in mm"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/txtTemp"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:baselineAligned="false"
-        android:hint="Enter average temp of the year"
-        android:inputType="number" />
-
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="48dp"
+        android:hint="Predicted Yield"/>
 
     <Button
         android:id="@+id/btnCancel"

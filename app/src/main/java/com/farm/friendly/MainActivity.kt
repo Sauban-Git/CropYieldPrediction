@@ -13,6 +13,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.farm.friendly.databinding.ActivityMainBinding
+import com.farm.friendly.databinding.DialogCustomBinding
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okio.IOException
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var countries: List<String>
     private lateinit var crops: List<String>
+    private lateinit var dialogBinding: DialogCustomBinding
 
     private lateinit var result: TextView
 
@@ -34,6 +36,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
+
+        result = dialogBinding.result
 
         countries = listOf(
             "Albania",
@@ -200,38 +204,48 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun makePrediction(selectedCntry: String, selectedCrop: String,rain: String, pest: String, temp: String) {
-        try {
-            val json = JSONObject().apply {
-                put("average_rain_fall_mm_per_year", rain)
-                put("pesticides_tonnes", pest)
-                put("avg_temp", temp)
-                put("Area", selectedCntry)
-                put("Item", selectedCrop)
+    private fun makePrediction(selectedCntry: String, selectedCrop: String, rain: String, pest: String, temp: String) {
+        // Input validation
+        if (rain.isEmpty() || pest.isEmpty() || temp.isEmpty()) {
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val json = JSONObject().apply {
+            put("average_rain_fall_mm_per_year", rain)
+            put("pesticides_tonnes", pest)
+            put("avg_temp", temp)
+            put("Area", selectedCntry)
+            put("Item", selectedCrop)
+        }
+
+        val body = RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), json.toString())
+        val request = Request.Builder()
+            .url(BASE_URL)
+            .post(body)
+            .build()
+
+        client.newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                e.printStackTrace()
+                runOnUiThread {
+                    Toast.makeText(this@MainActivity, "Network error, please try again", Toast.LENGTH_SHORT).show()
+                }
             }
 
-            val body = RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), json.toString())
-            val request = Request.Builder()
-                .url(BASE_URL)
-                .post(body)
-                .build()
-
-            client.newCall(request).enqueue(object : Callback {
-                override fun onFailure(call: Call, e: IOException) {
-                    e.printStackTrace()
-                }
-
-                override fun onResponse(call: Call, response: Response) {
-                    if (response.isSuccessful) {
-                        val myResponse = response.body?.string()
-                        runOnUiThread {
-                            result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}"
-                        }
+            @SuppressLint("SetTextI18n")
+            override fun onResponse(call: Call, response: Response) {
+                if (response.isSuccessful) {
+                    val myResponse = response.body?.string()
+                    runOnUiThread {
+                        result.text = "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }}"
+                    }
+                } else {
+                    runOnUiThread {
+                        Toast.makeText(this@MainActivity, "Error: ${response.code}", Toast.LENGTH_SHORT).show()
                     }
                 }
-            })
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
+            }
+        })
     }
 }
