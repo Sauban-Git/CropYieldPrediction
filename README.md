@@ -45,7 +45,7 @@ The Farming Planning App is designed to assist farmers in making informed decisi
    - Follow the on-screen instructions to complete the installation.
 
 3. **Launch the App:**
-   Once installed, open the app from your device’s app drawer and start playing!
+   Once installed, open the app from your device’s app drawer and start using!
 
 ## Usage
 
