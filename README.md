@@ -1,3 +1,7 @@
+# Project Title
+
+This project was developed as part of the **SAMSUNG INNOVATION CAMP**, focusing on Machine Learning Model and delivering it to the Farmers end. It utilizes technologies to assist farmers in making informed decisions regarding their farming practices.
+
 # About Dataset
 
 ## Context
