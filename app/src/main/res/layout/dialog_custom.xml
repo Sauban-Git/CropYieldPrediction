@@ -6,14 +6,14 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/txtPest"
+        android:id="@+id/txtRain"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Enter Avg Rainfall in mm."
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/txtRain"
+        android:id="@+id/txtPest"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Enter Pesticide used in tonnes."
