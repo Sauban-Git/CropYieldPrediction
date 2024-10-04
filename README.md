@@ -53,3 +53,7 @@ The Farming Planning App is designed to assist farmers in making informed decisi
 - **Match Icons:** Fill the blanks parts with correct values for good predictions.
 - **SErver Facility:** If server does not respond you can try other server too.
 
+
+## Model performance
+
+![alt text](image.png)
