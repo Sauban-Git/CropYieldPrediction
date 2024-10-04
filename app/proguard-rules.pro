@@ -19,12 +19,4 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep public class com.google.vending.licensing.ILicensingService { void <init>(); }
--keep public class com.android.vending.licensing.ILicensingService { void <init>(); }
--keep public class com.google.android.vending.licensing.ILicensingService { void <init>(); }
--keep class android.support.annotation.Keep { void <init>(); }
--keep class okhttp3.** { *; }
--keep class okio.** { *; }
--keep class org.bouncycastle.** { *; }
--keep class org.conscrypt.** { *; }
--keep class org.openjsse.** { *; }
+-keep class com.farm.friendly.** { *; }
