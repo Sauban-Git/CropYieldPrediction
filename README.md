@@ -1,3 +1,15 @@
+# About Dataset
+
+## Context
+The science of training machines to learn and produce models for future predictions is widely used, and not for nothing. Agriculture plays a critical role in the global economy. With the continuing expansion of the human population understanding worldwide crop yield is central to addressing food security challenges and reducing the impacts of climate change.
+
+Crop yield prediction is an important agricultural problem. The Agricultural yield primarily depends on weather conditions (rain, temperature, etc), pesticides and accurate information about history of crop yield is an important thing for making decisions related to agricultural risk management and future predictions.
+
+# Acknowledgements
+All dataset(publicly available dataset) here are taken form FAO (Food and Agriculture Organization) and World Data Bank.
+[FAO](http://www.fao.org/home/en/)<br>
+[WorldBank](https://data.worldbank.org/)
+
 # Farming Planning App
 
 ## Overview
@@ -13,7 +25,7 @@ The Farming Planning App is designed to assist farmers in making informed decisi
 
 - **Frontend**: Kotlin (Android App)
 - **Backend**: Python (Flask framework)
-- **Machine Learning**: Scikit-learn, Pandas, NumPy
+- **Machine Learning**: Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
 - **Database**: MySQL
 - **Deployment**: Railway
 
