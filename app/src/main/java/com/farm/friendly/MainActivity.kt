@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ipAdd: EditText
 
     private val client = OkHttpClient()
-    private var urlServer = "https://web-production-e6c2.up.railway.app/predict"
+    private var urlServer = "https://cyphosting.onrender.com/predict"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
