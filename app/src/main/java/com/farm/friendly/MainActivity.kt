@@ -250,8 +250,9 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this@MainActivity, "Predicted Yield: ${myResponse?.let { JSONObject(it).getString("prediction") }} Tonnes per Hectare", Toast.LENGTH_LONG).show()
                     }
                 } else {
+                    val errorBody = response.body?.string()
                     runOnUiThread {
-                        Toast.makeText(this@MainActivity, "Error: ${response.code}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity, "Error: ${response.code}, Response: $errorBody", Toast.LENGTH_LONG).show()
                     }
                 }
             }

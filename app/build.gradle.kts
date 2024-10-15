@@ -17,14 +17,14 @@ android {
     namespace = "com.farm.friendly"
     compileSdk = 34
 
-    signingConfigs {
-        create("release") {
-            storeFile = file(keystoreProperties["storeFile"] ?: "")
-            storePassword = keystoreProperties["storePassword"]?.toString() ?: ""
-            keyAlias = keystoreProperties["keyAlias"]?.toString() ?: ""
-            keyPassword = keystoreProperties["keyPassword"]?.toString() ?: ""
-        }
-    }
+//    signingConfigs {
+//        create("release") {
+//            storeFile = file(keystoreProperties["storeFile"] ?: "")
+//            storePassword = keystoreProperties["storePassword"]?.toString() ?: ""
+//            keyAlias = keystoreProperties["keyAlias"]?.toString() ?: ""
+//            keyPassword = keystoreProperties["keyPassword"]?.toString() ?: ""
+//        }
+//    }
 
     defaultConfig {
         applicationId = "com.farm.friendly"
@@ -38,7 +38,7 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("release")
+//            signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
