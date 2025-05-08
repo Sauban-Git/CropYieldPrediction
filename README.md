@@ -51,7 +51,7 @@ The Farming Planning App is designed to assist farmers in making informed decisi
 
 - **Start the App:** Launch the app and tap on start button.
 - **Match Icons:** Fill the blanks parts with correct values for good predictions.
-- **SErver Facility:** If server does not respond you can try other server too.
+- **SErver Facility:** ~~If server does not respond you can try other server too.~~ All servers are down. I will fix it soon.
 
 
 ## Model performance
